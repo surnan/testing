@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		849F6CDF21C6D8DA0049B229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CDE21C6D8DA0049B229 /* AppDelegate.swift */; };
-		849F6CE121C6D8DA0049B229 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CE021C6D8DA0049B229 /* ViewController.swift */; };
+		849F6CE121C6D8DA0049B229 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CE021C6D8DA0049B229 /* HomeController.swift */; };
 		849F6CE421C6D8DA0049B229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F6CE221C6D8DA0049B229 /* Main.storyboard */; };
 		849F6CE621C6D8DC0049B229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849F6CE521C6D8DC0049B229 /* Assets.xcassets */; };
 		849F6CE921C6D8DC0049B229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F6CE721C6D8DC0049B229 /* LaunchScreen.storyboard */; };
 		849F6CF121C6DAF00049B229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CF021C6DAF00049B229 /* Extensions.swift */; };
+		849F6CF321C6E2090049B229 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CF221C6E2090049B229 /* IconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		849F6CDB21C6D8DA0049B229 /* TikTokSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849F6CDE21C6D8DA0049B229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		849F6CE021C6D8DA0049B229 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		849F6CE021C6D8DA0049B229 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		849F6CE321C6D8DA0049B229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		849F6CE521C6D8DC0049B229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849F6CE821C6D8DC0049B229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849F6CEA21C6D8DC0049B229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849F6CF021C6DAF00049B229 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		849F6CF221C6E2090049B229 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		849F6CDD21C6D8DA0049B229 /* TikTokSim */ = {
 			isa = PBXGroup;
 			children = (
+				849F6CF421C6E2460049B229 /* Controllers */,
 				849F6CDE21C6D8DA0049B229 /* AppDelegate.swift */,
-				849F6CE021C6D8DA0049B229 /* ViewController.swift */,
 				849F6CE221C6D8DA0049B229 /* Main.storyboard */,
 				849F6CF021C6DAF00049B229 /* Extensions.swift */,
 				849F6CE521C6D8DC0049B229 /* Assets.xcassets */,
 				849F6CE721C6D8DC0049B229 /* LaunchScreen.storyboard */,
 				849F6CEA21C6D8DC0049B229 /* Info.plist */,
+				849F6CF221C6E2090049B229 /* IconView.swift */,
 			);
 			path = TikTokSim;
+			sourceTree = "<group>";
+		};
+		849F6CF421C6E2460049B229 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				849F6CE021C6D8DA0049B229 /* HomeController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849F6CE121C6D8DA0049B229 /* ViewController.swift in Sources */,
+				849F6CE121C6D8DA0049B229 /* HomeController.swift in Sources */,
+				849F6CF321C6E2090049B229 /* IconView.swift in Sources */,
 				849F6CF121C6DAF00049B229 /* Extensions.swift in Sources */,
 				849F6CDF21C6D8DA0049B229 /* AppDelegate.swift in Sources */,
 			);
