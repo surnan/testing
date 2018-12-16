@@ -28,9 +28,20 @@ class HomeController: UIViewController {
     let descriptionLabel: UILabel = {
        let label = UILabel()
         label.numberOfLines = 0
-        label.text = "@jxoproductions"
         label.textColor = .white
-//        label.textAlignment = .center
+        let attributedText = NSMutableAttributedString(string: "@jxoproductions", attributes: [ NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18)])
+        attributedText.append((NSAttributedString(string: "\nI was having a little too much fun with this.  😝  can you do it??", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18)])))
+        attributedText.append((NSAttributedString(string: "\nMusic Track Name", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18)])))
+
+        
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = 10
+        
+//        let range = NSMakeRange(0, attributedText.string.count)
+        let range = NSMakeRange(0, "@jxoproductions".count)
+        attributedText.addAttributes([.paragraphStyle: style], range: range)
+        
+        label.attributedText = attributedText
         return label
     }()
  
