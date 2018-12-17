@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class HomeController: UIViewController {
 
@@ -51,14 +52,32 @@ class HomeController: UIViewController {
         return stackView
     }()
     
+    let player = AVPlayer()
+    
+    
+    fileprivate func setupVideoPlayer(){
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = view.frame
+        playerLayer.backgroundColor = UIColor.darkGray.cgColor
+        let videoURL = Bundle.main.url(forResource: "darkWind", withExtension: "mp4")!
+        let item = AVPlayerItem(url: videoURL)
+        player.replaceCurrentItem(with: item)
+        player.play()
+        view.layer.addSublayer(playerLayer)
+    }
+    
+    
+    fileprivate func setupLayout() {
+        [stackView, descriptionStackView].forEach{view.addSubview($0)}
+        stackView.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
+        descriptionStackView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: stackView.leadingAnchor, paddingTop: 0, paddingLeading: 16, paddingBottom: -16, paddingTrailing: -16)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarItem.title = "Home"
-        [stackView, descriptionStackView].forEach{view.addSubview($0)}
-
-        stackView.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
-        descriptionStackView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: stackView.leadingAnchor, paddingTop: 0, paddingLeading: 16, paddingBottom: -16, paddingTrailing: -16)
-
+        setupVideoPlayer()
+        setupLayout()
     }
 }
 

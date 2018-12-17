@@ -26,32 +26,26 @@ extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
 
         if let top = top {
-            print("t triggered")
             self.topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
         }
 
         if let leading = leading {
-            print("l triggered")
             self.leadingAnchor.constraint(equalTo: leading, constant: paddingLeading).isActive = true
         }
 
         if let bottom = bottom {
-            print("b triggered")
             self.bottomAnchor.constraint(equalTo: bottom, constant: paddingBottom).isActive = true
         }
 
         if let trailing = trailing {
-            print("w triggered")
             self.trailingAnchor.constraint(equalTo: trailing, constant: paddingTrailing).isActive = true
         }
 
         if width != 0 {
-            print("w triggered")
             self.widthAnchor.constraint(equalToConstant: width).isActive = true
         }
 
         if height != 0 {
-            print("h triggered")
             self.heightAnchor.constraint(equalToConstant: height).isActive = true
         }
     }

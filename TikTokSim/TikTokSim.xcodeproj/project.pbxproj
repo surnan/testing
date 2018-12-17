@@ -14,6 +14,8 @@
 		849F6CE921C6D8DC0049B229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F6CE721C6D8DC0049B229 /* LaunchScreen.storyboard */; };
 		849F6CF121C6DAF00049B229 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CF021C6DAF00049B229 /* Extensions.swift */; };
 		849F6CF321C6E2090049B229 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F6CF221C6E2090049B229 /* IconView.swift */; };
+		849F6CF621C7B1960049B229 /* rabbit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 849F6CF521C7B1960049B229 /* rabbit.mp4 */; };
+		849F6CF821C7B26E0049B229 /* darkWind.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 849F6CF721C7B26E0049B229 /* darkWind.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		849F6CEA21C6D8DC0049B229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849F6CF021C6DAF00049B229 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		849F6CF221C6E2090049B229 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		849F6CF521C7B1960049B229 /* rabbit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rabbit.mp4; sourceTree = "<group>"; };
+		849F6CF721C7B26E0049B229 /* darkWind.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = darkWind.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				849F6CE721C6D8DC0049B229 /* LaunchScreen.storyboard */,
 				849F6CEA21C6D8DC0049B229 /* Info.plist */,
 				849F6CF221C6E2090049B229 /* IconView.swift */,
+				849F6CF521C7B1960049B229 /* rabbit.mp4 */,
+				849F6CF721C7B26E0049B229 /* darkWind.mp4 */,
 			);
 			path = TikTokSim;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				849F6CE921C6D8DC0049B229 /* LaunchScreen.storyboard in Resources */,
+				849F6CF621C7B1960049B229 /* rabbit.mp4 in Resources */,
+				849F6CF821C7B26E0049B229 /* darkWind.mp4 in Resources */,
 				849F6CE621C6D8DC0049B229 /* Assets.xcassets in Resources */,
 				849F6CE421C6D8DA0049B229 /* Main.storyboard in Resources */,
 			);
