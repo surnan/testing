@@ -18,11 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         let tabBarController = UITabBarController()
+        
         tabBarController.viewControllers = [
-             HomeController(),
-             HomeController(),
-             HomeController(),
+            SwipingController(collectionViewLayout: UICollectionViewFlowLayout()),
+            VideoController(),
+            VideoController(),
         ]
+        
+        
+        
         window?.rootViewController = tabBarController
         
         return true

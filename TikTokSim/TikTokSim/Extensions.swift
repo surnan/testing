@@ -70,6 +70,16 @@ extension UIView {
             self.trailingAnchor.constraint(equalTo: trailing).isActive = true
         }
     }
+    
+    func fillSuperView(){
+        
+        NSLayoutConstraint.activate([
+            self.topAnchor.constraint(equalTo: topAnchor),
+            self.leadingAnchor.constraint(equalTo: leadingAnchor),
+            self.bottomAnchor.constraint(equalTo: bottomAnchor),
+            self.trailingAnchor.constraint(equalTo: trailingAnchor),
+            ])
+    }
 }
 
 extension Date {
