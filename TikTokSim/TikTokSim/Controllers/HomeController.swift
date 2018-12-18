@@ -57,7 +57,11 @@ class HomeController: UIViewController {
     
     fileprivate func setupVideoPlayer(){
         let playerLayer = AVPlayerLayer(player: player)
+
         playerLayer.frame = view.frame
+        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill  //similar to ImageView.contentmode setting
+        
+        
         playerLayer.backgroundColor = UIColor.darkGray.cgColor
         let videoURL = Bundle.main.url(forResource: "darkWind", withExtension: "mp4")!
         let item = AVPlayerItem(url: videoURL)
